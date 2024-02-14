@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="./client-chat.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+</head>
+<body>
+    <div class="header-area">
+        <h1> Chat via WebSocket with Bifid Cipher</h1>
+    </div>
+    <div class="opcije">
+        <div class="enkripcija">
+            <label class="enkripcijaLabela" >Encryption:</label>
+        </div>
+        <div class="periodDiv">
+            <label class="periodLabela" >Period:</label>
+        </div>
+        <div class="replace">
+            <div class="replaceThis">
+                <label class="replaceThisLabela" >Replace:</label>
+            </div>
+            <div class="withThis">
+                <label class="withThisLabela" >with:</label>
+            </div>
+        </div>
+        <div class="kljuc">
+            <label class="kljucLabela">Key:</label>
+        </div>
+    </div>
+    <div class="message-area" id="message-area">
+        
+        
+    </div>
+    
+
+    <div class="selektovanFajl"></div>
+
+    <div class="typing-area">
+        <input class="typing-box" id="typing-box" placeholder="Type your message here..." type="text"></input>
+        <input class="inputFile" type="file" hidden accept=".doc,.docx,.pdf,.text,.txt" id="fileID" style="display:none;">
+        <button class="chooseFile">Choose File</button>
+        <button class="send-button"> Send </button>
+    </div>
+    
+    
+    <script src="./client-simple/client.js" type="module"></script>
+    <script src="./opcije.js" type="module"></script>
+    <script src="./fajl.js" type="module"></script>
+</body>
+</html>
